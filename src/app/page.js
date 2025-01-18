@@ -59,7 +59,7 @@ export default function Home() {
       formData.append('audio', audioBlob, 'recording.wav');
 
       // Send to webhook
-      const response = await fetch('https://hooz.app.n8n.cloud/webhook-test/voicetoimage', {
+      const response = await fetch('https://hooz.app.n8n.cloud/webhook/voicetoimage', {
         method: 'POST',
         body: formData,
       });
